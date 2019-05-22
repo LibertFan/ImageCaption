@@ -8,7 +8,7 @@ Data process
 ```python3
 python BuildImgOrderClusterVocab.py
 ```
-Model training/testing
+Model training
 ```python3
 python Trainer.py 
 ```
