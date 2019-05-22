@@ -30,7 +30,7 @@ def read_commands():
     train_root = os.path.join(data_root, 'train')
     model_root = os.path.join(data_root, 'model')
     parser = argparse.ArgumentParser(usage='MS COCO Data Train Parameters')
-    parser.add_argument('--is_training', action='store_true', default=True)
+    parser.add_argument('--is_training', type=int, default=1)
     parser.add_argument('--model_name', type=str, default='RLSCNV3')
     parser.add_argument('--device', type=str, default='2')
     parser.add_argument('--data_name', type=str, default='coco')
