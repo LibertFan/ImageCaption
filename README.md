@@ -4,11 +4,11 @@ This is an implementation of *Bridging by Word: Image-Grounded Vocabulary Constr
 
 ## Run
 
-### Preprocess of data
+Data process
 ```python3
 python BuildImgOrderClusterVocab.py
 ```
-### 
+Model training/testing
 ```python3
 python Trainer.py 
 ```
