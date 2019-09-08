@@ -173,7 +173,7 @@ class Generate(torch.nn.Module):
             elif not isinstance(raw_caption, list):
                 raw_caption = list(raw_caption)
             refs[idx] = raw_caption
-        scores = self.measurer(hypos, refs, bleu=opts.bleu, metric=opts.metric)
+        scores = self.measurer(hypos, refs)
         scores = torch.from_numpy(scores).float()
         if torch.cuda.is_available():
             scores = scores.cuda()
