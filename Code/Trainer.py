@@ -185,9 +185,6 @@ class Trainer(object):
                 opts.mle_factor = 0.0
                 opts.reinforce_factor = 1.0
                 opts.learning_rate = 5e-5 * (0.8 ** (epoch // 30000))
-                opts.metric = 'CIDEr'
-                opts.bleu = True
-                opts.bleu_factor = 0.1
                 opts.batch_size = 64
                 opts.select_high_size = 5
                 opts.select_word_size = opts.word_num
